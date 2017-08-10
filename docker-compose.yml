@@ -1,0 +1,9 @@
+version: '3'
+services:
+  wordpress_test:
+    build: ./wp-image
+    image: harrinsonmb/wordpress
+    ports:
+    - "8080:80"
+    volumes:
+    - ./wp-app:/var/www/html
